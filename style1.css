@@ -43,7 +43,7 @@ ul.listleft li {
     padding-left: 0;
     line-height: 1.6;
     margin-bottom: 0.5em;
-    font-size: 20px;
+    font-size: 22px;
 }
 ul.listleft li:last-child {
     margin-bottom: 0;
@@ -455,7 +455,14 @@ img {
         margin-bottom: 20px;
         padding-left: 0;
     }
-    ul.listleft li {
+    p,
+    ul.listleft li,
+    .responsive-text,
+    .text-center p,
+    .contact-form-page,
+    .contact-form-page label,
+    .contact-form-page input,
+    .contact-form-page textarea {
         font-size: 16px;
     }
     .custom-img {
@@ -464,9 +471,6 @@ img {
     }
     .footer-text {
         font-size: 12px;
-      }
-    p {
-        font-size: 16px;
       }
 
     .custom-textarea {
@@ -541,14 +545,18 @@ img {
         margin-bottom: 20px;
         padding-left: 0;
     }
-    ul.listleft li {
+    p,
+    ul.listleft li,
+    .responsive-text,
+    .text-center p,
+    .contact-form-page,
+    .contact-form-page label,
+    .contact-form-page input,
+    .contact-form-page textarea {
         font-size: 18px;
     }
     .footer-text {
         font-size: 14px;
-      }
-    p {
-        font-size: 18px;
       }
     
     .custom-textarea {
