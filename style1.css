@@ -455,6 +455,9 @@ img {
         margin-bottom: 20px;
         padding-left: 0;
     }
+    ul.listleft li {
+        font-size: 16px;
+    }
     .custom-img {
         max-width: 150px;  /* Slightly smaller on mobile */
         min-width: 100px;
@@ -537,6 +540,9 @@ img {
         margin-top: 0px;
         margin-bottom: 20px;
         padding-left: 0;
+    }
+    ul.listleft li {
+        font-size: 18px;
     }
     .footer-text {
         font-size: 14px;
