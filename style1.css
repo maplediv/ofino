@@ -45,6 +45,10 @@ ul.listleft li {
     margin-bottom: 0.5em;
     font-size: 22px;
 }
+ul.listleft li strong {
+    font-size: 1em;
+    font-weight: bold;
+}
 ul.listleft li:last-child {
     margin-bottom: 0;
 }
@@ -457,6 +461,7 @@ img {
     }
     p,
     ul.listleft li,
+    ul.listleft li strong,
     .responsive-text,
     .text-center p,
     .contact-form-page,
@@ -547,6 +552,7 @@ img {
     }
     p,
     ul.listleft li,
+    ul.listleft li strong,
     .responsive-text,
     .text-center p,
     .contact-form-page,
