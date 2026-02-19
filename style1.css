@@ -142,7 +142,7 @@ h1 {
   }
 
   h2 {
-    font-size: 36px !important;
+    font-size: 34px !important;
     margin-bottom: 20px !important;
     margin-top: 30px;
     color: #000000;
@@ -150,7 +150,7 @@ h1 {
 
   h3 {
     text-align: left;
-    font-size: 30px !important;
+    font-size: 28px !important;
     margin-bottom: 0px !important;
     margin-top: 0px;
     color: #000000;
@@ -187,6 +187,155 @@ h1 {
     flex-direction: column;
     justify-content: center;
     min-height: calc(100vh - 180px);
+    padding-top: 48px; /* spacing between nav and contact form, all breakpoints */
+}
+
+/* Work / Case study page – typography hierarchy for all content */
+.work-page {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.case-study-header {
+    margin-bottom: 48px;
+}
+.case-study-title {
+    font-size: 36px !important;
+    margin-bottom: 12px !important;
+    margin-top: 0 !important;
+    color: #000;
+}
+.case-study-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.case-study-meta {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.case-study-meta p {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+.case-study-section {
+    margin-bottom: 56px;
+}
+.case-study-section h2 {
+    font-size: 26px !important;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+    color: #000;
+}
+.section-subtitle {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+}
+.section-intro {
+    margin-bottom: 24px;
+}
+.section-row {
+    margin-bottom: 24px;
+}
+.section-text p {
+    margin-bottom: 16px;
+}
+.section-media {
+    margin-top: 24px;
+    overflow: visible;
+}
+.section-media .case-study-img {
+    width: 115%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+@media (min-width: 992px) {
+    .section-media {
+        margin-top: 0;
+        padding-left: 4rem;
+    }
+}
+.case-study-list {
+    padding-left: 1.5em;
+    margin-bottom: 16px;
+}
+.case-study-list li {
+    margin-bottom: 6px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Work page only: hierarchy = title (h1) > section headings > h2 lines (subtitle under each heading) > paragraph */
+.work-page .case-study-title {
+    font-size: 36px !important;
+}
+.work-page .case-study-section > .row h2,
+.work-page .case-study-section > h2 {
+    font-size: 26px !important;
+    margin-bottom: 12px !important;  /* tight: header to subtitle/paragraph */
+}
+.work-page .case-study-section {
+    margin-bottom: 28px;  /* between sections (end of content to next header) */
+}
+/* H2 = the line below the heading (e.g. "Who cares?", "What question?", lorem under main title) */
+.work-page .case-study-subtitle,
+.work-page .section-subtitle,
+.work-page .section-intro {
+    font-size: 20px !important;
+}
+.work-page h3 {
+    font-size: 18px !important;
+}
+.work-page p {
+    font-size: 17px !important;
+}
+.work-page .case-study-meta {
+    color: inherit;
+}
+.work-page .case-study-meta p {
+    font-size: 17px !important;
+}
+.work-page .case-study-list li {
+    font-size: 17px !important;
+}
+
+/* Same spacing rules for tablet and mobile */
+@media (max-width: 991px) {
+    .work-page .case-study-section > .row h2,
+    .work-page .case-study-section > h2 {
+        margin-bottom: 12px !important;
+    }
+    .work-page .case-study-section {
+        margin-bottom: 28px;
+    }
+}
+
+/* Consistent spacing between sections on mobile: section margin only */
+@media (max-width: 767px) {
+    .work-page .case-study-section {
+        margin-bottom: 48px;
+    }
+    .work-page .case-study-section .section-row {
+        margin-bottom: 0;
+    }
+    /* Remove last element’s margin so gap after text sections = gap after image sections */
+    .work-page .case-study-section .section-text > *:last-child {
+        margin-bottom: 0;
+    }
+    .work-page .case-study-section .section-media {
+        margin-bottom: 0;
+    }
+}
+
+.key-visuals-row .case-study-img {
+    width: 115%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Center align only the main content containers */
